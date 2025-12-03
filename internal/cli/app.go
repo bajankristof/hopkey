@@ -12,8 +12,8 @@ import (
 
 func NewApp() *cli.Command {
 	return &cli.Command{
-		Name:  "hopkey",
-		Usage: "A hotkey daemon for macOS",
+		Name:    "hopkey",
+		Usage:   "A hotkey daemon for macOS",
 		Version: "0.1.0",
 		Commands: []*cli.Command{
 			NewInstallCommand(),
