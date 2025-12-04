@@ -11,8 +11,6 @@ A hotkey daemon for macOS, written in Go.
 
 ## Installation
 
-***THIS DOES NOT WORK YET***
-
 ```bash
 brew install bajankristof/tap/hopkey
 ```
@@ -20,6 +18,7 @@ brew install bajankristof/tap/hopkey
 ### Notarization
 
 **By using hopkey, you acknowledge that it has not been notarized by Apple.**
+
 The Homebrew installation process includes a step to remove the quarantine attribute,
 but you may still encounter security warnings when running the application for the first time.
 To bypass these warnings, you can go to the "Security & Privacy" settings in macOS and allow the application to run.
