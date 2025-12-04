@@ -29,11 +29,12 @@ jobs:
       - name: Build
         env:
           GOARCH: ${{ matrix.goarch }}
-        run: go build -o bin/hopkey-${{ matrix.goarch }} ./cmd/hopkey/main.go
+        run: go build -o bin/hopkey ./cmd/hopkey/main.go
 
       - name: Archive Binary
         run: |
-          zip bin/hopkey-${{ matrix.goarch }}.zip bin/hopkey-${{ matrix.goarch }}
+          cd bin
+          zip hopkey-${{ matrix.goarch }}.zip hopkey
 
       - name: Upload Release Asset
         env:
